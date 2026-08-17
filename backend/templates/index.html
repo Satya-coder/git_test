@@ -1,13 +1,25 @@
-<!DOCTYPE html>
+!<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="Chrome=IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do page</title>
 </head>
 <body>
-    <p> Hi, Welcome to the git tutorial</p>
-    <p>Hi, This is second time commit</p>
-
+<div class="container">
+    <h2>To-do List</h2>
+    <form id="todo-form">
+        <label for ='itemName'>Item Name:</label>
+        <input type="text" id="itemName" name="itemName" placeholder="Enter item name" required>
+        <label for="itemDescription">Item Description:</label>
+        <input type="text" id="itemDescription" name="itemDescription" placeholder="Enter item description" required>
+        <label for="itemId">Item ID:</label>
+        <input type="text" id="itemId" name="itemId" placeholder="Enter item ID" required>
+        <br><br>
+        <button type="submit">Add Item</button>
+    </form>
+    <div id="status-msg"></div>
+</div>
 </body>
 </html>
+
